@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', "Montserrat", sans-serif;
 }
 
+/*-------------header navbar--------------*/
 .navbar {
-    padding-top: 40px;
+    padding-top: -20px;
     padding-bottom: 0;
 
     border: 0;
@@ -14,40 +15,43 @@
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0;
+    position: relative;
 }
 .navbar-nav li a:hover {
-    /*color: #1abc9c !important;*/
     color: #FCB115 !important;
 }
-
-body {
-    font: 16px "Montserrat", sans-serif;
-    line-height: 1;
-    color: black;
+.navbar-collapse{margin-top: -5px;}
+.navbar-right{margin-right: 0;}
+.navbar-rightless{
+    margin-right: -40px;
+}
+.input-rechercher{
+    margin-right: -35px;
+    margin-bottom: -5px;
+    margin-top: 5px;
+    padding-right: 0;
 }
 
-
-.navbar-collapse{margin-top: 50px;}
-
 .logo{
-    display: block;
-    width:120px;
+    display: inline;
+    width:100px;
     height: auto;
     max-width: 100%;
     border: 0;
     padding-top: 0;
-    padding-bottom: 0;
-    margin-top: -50px;
+    margin-top: -10px;
+    margin-left: -10px;
 }
 .logo-details{
     display: inline-block;
-    color:#ED323D;
+    color:#ED323D !important;
     font-size: 14px;
-    margin-top: 0;
+    margin-top:20px;
+    margin-left: -20px;
 }
-
+/*-------------------------------------------------------------------------------------*/
 .titre-section{
-    color:#ED323D;
+    color: #ED323D;
     font-weight: bold;
     font-size: 26px;
 }
@@ -60,12 +64,30 @@ body {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
-
+.alert-bg{
+    background-color:#FCB115;
+    color: black;
+    font-weight: normal;
+}
 .table-responsive{
     font-size: 15px !important;
     font-weight: bold !important;
 }
-
+thead{
+    background-color: navy !important;
+    color: white !important;
+    font-size: 14px !important;
+}
+tbody{
+    color: black;
+    font-size: 12px;
+}
+tfoot{
+    background-color: navy !important;
+    color: white !important;
+    font-size: 6px !important;
+    font-weight: lighter;
+}
 
 /*---------------------------------section-------------------------------------*/
 
@@ -85,26 +107,45 @@ body {
     padding-top: 20px;
     font-size: 16px;
 }
-
-.alert-bg{
-    background-color:#FCB115;
-    color: black;
-    font-weight: normal;
+.text-bref{
+    text-align: center;
+    color: #033E77;
 }
 
-thead{
-    background-color: navy !important;
-    color: white;
-    font-size: 12px;
+.row-btn{
+    color: #FCB115 !important;
+    font-weight: bold;
+    align-items: center;
+    box-sizing: border-box;
+    justify-items: center;
+    background-color: #033E77;
 }
+
 
 @media(max-width:768px) {
-    .collapse{background-color: darkred;}
-    .navbar-collapse{margin-top: 0;}
-    .logo{width:100px;}
-    .navbar-nav li a{color: white !important;}
+    .collapse {
+        background-color: darkred;
+    }
 
+    .navbar-collapse {
+        margin: 0;
+    }
 
+    .logo {
+        width: 100px;
+    }
+
+    .navbar-nav li a {
+        color: white !important;
+    }
+
+    .input-rechercher {
+        margin-right: -20px;
+    }
+
+    .navbar-rightless {
+        margin-right: 0;
+    }
 }
 
 

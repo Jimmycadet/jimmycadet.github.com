@@ -27,23 +27,24 @@
                     <span class="icon-bar"></span>
 
                 </button>
-                <!-- Brand -->
+                <!-- Brand logo-->
 
                 <a class="navbar-brand" href="#">
 
-                    <img src="../images/logo.png" alt="Logo" class="logo img-circle img-responsive">
+                    <img src="../images/Logo_Rgph_haiti.png" alt="RGPH" class="logo img-circle img-responsive">
 
                 </a>
-
+                    {{-- Brand logo details --}}
                     <p class="logo-details">
-                       <span style="color: #033E77;">République D’Haïti<br></span><br>V<sup>e</sup><b> Recensement Général de la<br>Population et de l'Habitat</b>
+                       <span style="color: #033E77;">République D’Haïti</span><br>
+                        V<sup style="color:#ED323D;">e</sup><b style="color:#ED323D;"> Recensement Général de la<br>Population et de l'Habitat</b>
                     </p>
 
 
             </div>
             <form class="navbar-form navbar-right" action="/action_page.php">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group input-rechercher">
+                    <input type="text" class="form-control" placeholder="Rechercher">
                     <div class="input-group-btn">
                         <button class="btn btn-default" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
@@ -52,7 +53,7 @@
                 </div>
             </form>
             <div class="collapse navbar-collapse " id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right navbar-rightless">
                     <li><a href="#">{{Str::ucfirst('Accueil')}}</a></li>
                     <li><a href="#">{{Str::ucfirst('A propos du Ve RGPH')}}</a></li>
                     <li><a href="#">{{Str::ucfirst('Structure Organisationnelle')}}</a></li>
@@ -89,7 +90,7 @@
                         <caption style="color: black; font-size: 14px;">
                             {{Str::ucfirst('Projection de la population de 2018')}}
                         </caption>
-                        <thead>
+                        <thead >
                             <tr>
                                 <th>{{Str::ucfirst('Unité Géographique')}}</th>
                                 <th>{{Str::ucfirst('Deux Sexes')}}</th>
@@ -106,7 +107,7 @@
                             </tr>
                         <tfoot>
                             <tr>
-                                <td colspan="4" style="font-weight: lighter; font-size: 10px !important;">
+                                <td colspan="4" style="font-weight: lighter; font-size: 12px !important;">
                                     {{'Source: IHSI/Direction des Statistiques Démographiques et Sociales (DSDS)'}}
                                 </td>
                             </tr>
@@ -114,17 +115,50 @@
                         </tbody>
                     </table>
                 </div>
+{{--                <div class="container col-md-12" style="margin-top: 50px; margin-bottom: 100px;">--}}
+{{--                    <a href="#" >--}}
+{{--                        <img class="img-responsive" src="../images/statistiqueseconomiques.png" alt="Statistiques economiques" width="40%" style="display:inline-block; margin-right: 80px;">--}}
+{{--                    </a>--}}
+{{--                    <a href="#" >--}}
+{{--                        <img class="img-responsive" src="../images/statistiquesdemographiques.png" alt="Statistiques démographiques" width="40%" style="display:inline-block;">--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+                <div class="row" style="margin-top: 60px;">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img class="img-responsive" src="../images/statistiqueseconomiques.png" alt="Statistiques economiques" >
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img class="img-responsive" src="../images/statistiquesdemographiques.png" alt="Statistiques démographiques">
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
 
             <div class="col-md-4" style="background-color: #f7fafc;">
                 <p><h2 class="titre-section">Avis</h2></p>
                 <div class="alert alert-success alert-dismissible alert-shadow alert-bg">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    L’institut Haïtien de Statistiques et d’Informatique (IHSI) présente ses compliments à ses nombreux
+                    internautes et en profite pour les informer que, dans le souci de leur fournir un meilleur service,
+                    il est en train de travailler sur la modernisation de son site internet. Pendant les travaux, pour
+                    pouvoir continuer à avoir accès aux statistiques disponibles sur le site habituel, ils n’auront qu’à
+                    cliquer sur le lien conçu à cet effet. LIHSI les remercie de leurs compréhensions.
                 </div>
                 <div class="alert alert-success alert-dismissible alert-shadow alert-bg">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Bulletin de l’Indice des Prix à la Consommation (IPC) des mois d’aout, septembre et d’octobre 2020
                 </div>
                 <div class="alert alert-success alert-dismissible alert-shadow alert-bg">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -135,8 +169,8 @@
     </div>
 {{-------------------------------------------------------------------------------------------------------}}
 
-<section>
-     <div class="container" style="background-color: #f7fafc">
+<section style="padding-top: 20px;">
+     <div class="container" style="background-color: #f7fafc;">
          <div class="row">
              <div class="col-sm-4" >
                  <p><h2 class="titre-section">{{Str::ucfirst('Liste d’actualités')}}</h2></p>
@@ -168,34 +202,50 @@
                  </div>
              </div> {{--liste actualites--}}
                  {{--         ---------------------------------------------------------------}}
+
              <div class="col-sm-4" style="background-color: #f7fafc; margin-top: 50px;">
                  <div class="thumbnail">
                      <a href="/">
                          <img src="../images/flag.png" alt="Lights" style="width:18%">
                          <div class="caption">
-                             <p ><h2 style="text-align: center">Haïti en Bref</h2></p>
-                             <p style="text-align: center"><b>Voir les données statistiques de nos 10 départements</b></p>
+                             <p ><h2 class="text-bref">Haïti en Bref</h2></p>
+                             <p class="text-bref"><b>Voir les données statistiques de nos 10 départements</b></p>
                          </div>
                      </a>
                  </div>
              </div>
 
              <div class="col-sm-4" style="background-color: #f7fafc;">
-                 <p><h2 class="titre-section">{{Str::ucfirst('Documentation')}}</h2></p>
+                 <p><h2 class="titre-section">{{Str::ucfirst('Documentation')}}</h2></p><br>
                  <p></p>
                  <p><h4 class="text-dark">{{Str::ucfirst('Nos Supports de communication:')}}</h4></p>
                  <div class="">
                      <ul class="">
                          <br>
-                         <li><a href="#">{{Str::ucfirst('[PDF]Ve RGPH Questionnaire créole')}}</a></li><br>
-                         <li><a href="#">{{Str::ucfirst('[PDF]Présentation Haïti Ve RGPH 21 Avril 0219')}}</a></li><br>
-                         <li><a href="#">{{Str::ucfirst('Dépliant Ve RGPH')}}</a></li><br>
-                         <li><a href="#">{{Str::ucfirst('Le Ve RGPH en bref version française')}}</a></li>
+                         <li><a href="#"><sup style="color: #ED323D">[PDF]</sup>V<sup>e</sup> RGPH Questionnaire créole</a></li><br>
+                         <li><a href="#"><sup style="color: #ED323D">[PDF]</sup>Présentation Haïti Ve RGPH 21 Avril 0219</a></li><br>
+                         <li><a href="#">Dépliant Ve RGPH</a></li><br>
+                         <li><a href="#">Le Ve RGPH en bref version française</a></li>
                      </ul>
                  </div>
              </div>
          </div> {{--div class="row"--}}
      </div>    {{--div class="container"--}}
+
+    <div class="container" style="background-color: #f7fafc; margin-top: 30px;padding-top: 20px; padding-bottom: 20px;">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary row-btn">CONFIDENTIALITE</button>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary row-btn">SUR QUOI PORTE LE RECENSEMENT?</button>
+            </div>
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary row-btn btn-center">LES PHASES DU RECENSEMENT</button>
+            </div>
+        </div>
+    </div>
 </section>
 
 {{--    ----------------------Footer------------------------------------------------------------------------------------------------------}}
@@ -218,20 +268,20 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-2 footers-two">
                     <p><h4><b>Menu</b></h4></p>
-                    <ul class="list-unstyled">
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Structure Organisationnelle</a></li>
-                        <li><a href="">Cadre Légalr</a></li>
+                    <ul class="list-unstyled" >
+                        <li ><a href="" style="color: white;">Accueil</a></li>
+                        <li><a href="" style="color: white;">Structure Organisationnelle</a></li>
+                        <li><a href="" style="color: white;">Cadre Légalr</a></li>
 
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-2 footers-three">
                     <p><h4><b>Partenaires</b></h4></p>
                     <ul class="list-unstyled">
-                        <li><a href="">LINK</a></li>
-                        <li><a href="">LINK</a></li>
-                        <li><a href="">LINK</a></li>
-                        <li><a href="">LINK</a></li>
+                        <li><a href="" style="color: white;">LINK</a></li>
+                        <li><a href="" style="color: white;">LINK</a></li>
+                        <li><a href="" style="color: white;">LINK</a></li>
+                        <li><a href="" style="color: white;">LINK</a></li>
 
                     </ul>
                 </div>
@@ -244,16 +294,16 @@
                             <form action="#">
 
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
+                                    <label for="exampleInputEmail1">Email *</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
 
                                 </div>
                                 <div class="msg">
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        <label for="exampleFormControlTextarea1">Message *</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="Entrer message"></textarea>
                                     </div>
-                                    <div class="btnEnv">
+                                    <div class="btn btn btm-primary">
                                         <button type="submit">Envoyer</button>
                                     </div>
                                 </div>
