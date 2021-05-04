@@ -48,6 +48,9 @@
     font-size: 14px;
     margin-top:20px;
     margin-left: -20px;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 /*-------------------------------------------------------------------------------------*/
 .titre-section{
@@ -121,6 +124,75 @@ tfoot{
     background-color: #033E77;
 }
 
+hr{
+    margin: 0;
+    padding: 0;
+}
+.envoyer{
+    background-color: transparent !important;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-color: white;
+    border-width: medium;
+}
+
+@keyframes moveInRight{
+    0%{
+
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    80%{
+
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.shine2{
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.04s;
+}
+
+/* Reflet */
+.shine div {
+    position: relative;
+}
+.shine div::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.shine div::before {
+    -webkit-animation: shine 2s;
+    animation: shine 5s;
+    animation-iteration-count: infinite;
+
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 60%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 60%;
+    }
+}
 
 @media(max-width:768px) {
     .collapse {

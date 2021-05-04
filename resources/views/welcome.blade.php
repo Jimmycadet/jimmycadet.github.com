@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header a">
                 <button type="button" class="navbar-toggle btn-lg" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 30px">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -68,7 +68,7 @@
 {{---------------------------------------------------------------------------------------------------------}}
 
     <div class="container">
-        <div class="row">
+        <div class="row shine">
             <div class="col-md-12" style="padding-left: 0;padding-right: 0;">
                 <a class="" href="#">
                     <img src="../images/banner1.png" alt="" class="img-responsive"  >
@@ -82,7 +82,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8" style="background-color: #f7fafc;">
+            <div class="col-md-7" style="background-color: #f7fafc;">
                 <div class="table-responsive">
                     <p><h2 class="titre-section">{{Str::ucfirst('Projection')}}</h2></p>
 
@@ -115,14 +115,7 @@
                         </tbody>
                     </table>
                 </div>
-{{--                <div class="container col-md-12" style="margin-top: 50px; margin-bottom: 100px;">--}}
-{{--                    <a href="#" >--}}
-{{--                        <img class="img-responsive" src="../images/statistiqueseconomiques.png" alt="Statistiques economiques" width="40%" style="display:inline-block; margin-right: 80px;">--}}
-{{--                    </a>--}}
-{{--                    <a href="#" >--}}
-{{--                        <img class="img-responsive" src="../images/statistiquesdemographiques.png" alt="Statistiques démographiques" width="40%" style="display:inline-block;">--}}
-{{--                    </a>--}}
-{{--                </div>--}}
+
                 <div class="row" style="margin-top: 60px;">
                     <div class="col-md-6">
                         <div class="thumbnail">
@@ -146,7 +139,7 @@
 
             </div>
 
-            <div class="col-md-4" style="background-color: #f7fafc;">
+            <div class="col-md-5" style="background-color: #f7fafc;">
                 <p><h2 class="titre-section">Avis</h2></p>
                 <div class="alert alert-success alert-dismissible alert-shadow alert-bg">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -160,10 +153,7 @@
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     Bulletin de l’Indice des Prix à la Consommation (IPC) des mois d’aout, septembre et d’octobre 2020
                 </div>
-                <div class="alert alert-success alert-dismissible alert-shadow alert-bg">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
+
             </div>
         </div>
     </div>
@@ -174,58 +164,70 @@
          <div class="row">
              <div class="col-sm-4" >
                  <p><h2 class="titre-section">{{Str::ucfirst('Liste d’actualités')}}</h2></p>
-                 <div class="thumbnail" style="background-color: transparent !important; border-color: transparent;" >
-                     <a href="/">
-                         <img src="../images/quest_creol.png" alt="Lights" style="width:14%; display: inline !important;">
-                         <p style="display: inline-block; font-size: 14px; ">
-                             Ve RGPH nouvelle version du questionnaire <br>créole
+
+                 <div class="thumbnail" style="background-color: transparent !important; border-color: transparent;margin:0;padding: 0;">
+                     <a href="/" style="display: inline-flex; margin-bottom-bottom: 10px;">
+                         <img src="../images/quest_creol.png" alt="Lights" style="width:22%; display: inline !important;margin-top: 0;padding-top: 0;">
+                         <p style=" font-size: 14px;margin-top: 0;padding-top: 0;">
+                             Ve RGPH nouvelle version du questionnaire créole
+                             <span class=" text-muted" style="font-size: 11px;">
+                                <br ><br> il y a 1 an</span>
                          </p>
                      </a>
+                     <hr style="margin: 0; padding: 0;">
+
                  </div>
-                 <div class="thumbnail" style="background-color: transparent !important; border-color: transparent;">
-                     <a href="/">
-                         <img src="../images/recensement_pilote.png" alt="Lights" style="width:14%; display: inline !important;">
-                         <p style="display: inline-block; font-size: 14px;">
+                 <div class="thumbnail" style="background-color: transparent !important; border-color: transparent; margin:0 ;padding-top: 10px;">
+                     <a href="/" style="display: inline-flex">
+                         <img src="../images/recensement_pilote.png" alt="Lights" style="width:18%; display: inline !important;margin-top: 0;padding-top: 0;">
+                         <p style="display: inline-block; font-size: 14px;margin-top: 0;padding-top: 0;">
                              En marche vers le Recensement Pilote
+                            <span class=" text-muted" style="font-size: 11px;">
+                                <br ><br> il y a 2 ans</span>
                          </p>
-                     </a>
 
+                     </a>
+                     <P><p></p></P>
+                     <hr style="margin: 0; padding: 0;">
                  </div>
-                 <div class="thumbnail" style="background-color: transparent !important; border-color: transparent;">
-                     <a href="/">
-                         <img src="../images/ve_rgph_21_avril_2019.png" alt="Lights" style="width:14%; display: inline !important;">
-                         <p style="display: inline-block; font-size: 14px;">
+                 <div class="thumbnail" style="background-color: transparent !important; border-color: transparent;margin: 0;padding-top: 10px;">
+                     <a href="/" style="display: inline-flex">
+                         <img src="../images/ve_rgph_21_avril_2019.png" alt="Lights" style="width:18%; display: inline !important;margin-top: 0;padding-top: 0;">
+                         <p style="display: inline-block; font-size: 14px;margin-top: 0;padding-top: 0;">
                              Présentation Haïti Ve RGPH 21 Avril 2019
+                             <span class="text-muted" style="font-size: 11px;">
+                                <br ><br> il y a 1 an</span>
                          </p>
-                     </a>
 
                  </div>
-             </div> {{--liste actualites--}}
-                 {{--         ---------------------------------------------------------------}}
+             </div> {{--liste actualites--}
 
-             <div class="col-sm-4" style="background-color: #f7fafc; margin-top: 50px;">
-                 <div class="thumbnail">
+             {{--         ---------------------------------------------------------------}}
+
+             <div class="col-sm-4" style="background-color: white; margin-top: 25px;">
+                 <div class="thumbnail" style="background-color: transparent; border-color: transparent">
                      <a href="/">
                          <img src="../images/flag.png" alt="Lights" style="width:18%">
                          <div class="caption">
                              <p ><h2 class="text-bref">Haïti en Bref</h2></p>
-                             <p class="text-bref"><b>Voir les données statistiques de nos 10 départements</b></p>
+                             <p class="text-bref" style="padding:30px 0 30px 0;"><b>Voir les données statistiques de nos 10 départements</b></p>
                          </div>
                      </a>
                  </div>
              </div>
 
              <div class="col-sm-4" style="background-color: #f7fafc;">
-                 <p><h2 class="titre-section">{{Str::ucfirst('Documentation')}}</h2></p><br>
+                 <p><h2 class="titre-section">{{Str::ucfirst('Documentation')}}</h2></p>
                  <p></p>
                  <p><h4 class="text-dark">{{Str::ucfirst('Nos Supports de communication:')}}</h4></p>
                  <div class="">
                      <ul class="">
                          <br>
                          <li><a href="#"><sup style="color: #ED323D">[PDF]</sup>V<sup>e</sup> RGPH Questionnaire créole</a></li><br>
-                         <li><a href="#"><sup style="color: #ED323D">[PDF]</sup>Présentation Haïti Ve RGPH 21 Avril 0219</a></li><br>
-                         <li><a href="#">Dépliant Ve RGPH</a></li><br>
-                         <li><a href="#">Le Ve RGPH en bref version française</a></li>
+                         <li><a href="#"><sup style="color: #ED323D">[PPT]</sup> Présentation Haïti Ve RGPH 21 Avril 0219</a></li><br>
+                         <li><a href="#"><sup style="color: #ED323D">[PDF]</sup> L'IHSI en bref</a></li><br>
+                         <li><a href="#"> Dépliant Ve RGPH</a></li><br>
+                         <li><a href="#"> Le Ve RGPH en bref version française</a></li>
                      </ul>
                  </div>
              </div>
@@ -237,7 +239,6 @@
             <div class="col-md-4 text-center">
                 <button type="button" class="btn btn-primary row-btn">CONFIDENTIALITE</button>
             </div>
-
             <div class="col-md-4 text-center">
                 <button type="button" class="btn btn-primary row-btn">SUR QUOI PORTE LE RECENSEMENT?</button>
             </div>
@@ -278,7 +279,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-2 footers-three">
                     <p><h4><b>Partenaires</b></h4></p>
                     <ul class="list-unstyled">
-                        <li><a href="" style="color: white;">LINK</a></li>
+                        <li><a href="" style="color: white;">IHSI</a></li>
                         <li><a href="" style="color: white;">LINK</a></li>
                         <li><a href="" style="color: white;">LINK</a></li>
                         <li><a href="" style="color: white;">LINK</a></li>
@@ -298,15 +299,15 @@
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
 
                                 </div>
-                                <div class="msg">
+
                                     <div class="form-group">
                                         <label for="exampleFormControlTextarea1">Message *</label>
                                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="Entrer message"></textarea>
                                     </div>
-                                    <div class="btn btn btm-primary">
-                                        <button type="submit">Envoyer</button>
+                                    <div class="btn">
+                                       <button class="envoyer" type="submit">Envoyer</button>
                                     </div>
-                                </div>
+
                             </form>
                         </div>
                     </div>
