@@ -1,61 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-  <title>Star Admin Pro Laravel Dashboard Template</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RGPH | Accueil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-  <!-- CSRF Token -->
-  <meta name="_token" content="{{ csrf_token() }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
-  <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
-
-  <!-- plugin css -->
-  {!! Html::style('assets/plugins/@mdi/font/css/materialdesignicons.min.css') !!}
-  {!! Html::style('assets/plugins/perfect-scrollbar/perfect-scrollbar.css') !!}
-  <!-- end plugin css -->
-
-  @stack('plugin-styles')
-
-  <!-- common css -->
-  {!! Html::style('css/app.css') !!}
-  <!-- end common css -->
-
-  @stack('style')
+    <link href="{{asset('../css/rgph.css')}}"  rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body data-base-url="{{url('/')}}">
+<body>
 
-  <div class="container-scroller" id="app">
-    @include('layout.header')
-    <div class="container-fluid page-body-wrapper">
-      @include('Users.Jimmy Cadet.Downloads.Compressed.StarAdmin-Free-Laravel-Admin-Template-master.StarAdmin-Free-Laravel-Admin-Template-master.template.resources.views.layout.sidebar')
-      <div class="main-panel">
-        <div class="content-wrapper">
-          @yield('content')
-        </div>
-        @include('layout.footer')
-      </div>
-    </div>
-  </div>
+{{---------------menu-header------------------------------------------------------------------------------------------}}
+<section>
+    @include('layout.menu-header')
+</section>
+{{--------------------------------------------------------------------------------------------------------------------}}
 
-  <!-- base js -->
-  {!! Html::script('js/app.js') !!}
-  {!! Html::script('assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js') !!}
-  <!-- end base js -->
-
-  <!-- plugin js -->
-  @stack('plugin-scripts')
-  <!-- end plugin js -->
-
-  <!-- common js -->
-  {!! Html::script('assets/js/off-canvas.js') !!}
-  {!! Html::script('assets/js/hoverable-collapse.js') !!}
-  {!! Html::script('assets/js/misc.js') !!}
-  {!! Html::script('assets/js/settings.js') !!}
-  {!! Html::script('assets/js/todolist.js') !!}
-  <!-- end common js -->
-
-  @stack('custom-scripts')
+{{---------main-banner------------------------------------------------------------------------------------------------}}
+<section>
+    @include('layout.main-banner')
+</section>
+{{--------------------------------------------------------------------------------------------------------------------}}
+{{---------main----------------------------------------------------------------------------------------------------}}
+@yield('content')
+{{------------------------------------------------------------------------------}}
+{{------------------------Footer--------------------------------------------------------------------------------------}}
+<section>
+    @include('layout.footer')
+</section>
 </body>
+
 </html>
