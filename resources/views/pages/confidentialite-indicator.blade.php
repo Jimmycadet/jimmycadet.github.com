@@ -1,4 +1,5 @@
 @extends('layout.master')
+
 @section('content')
     <div class="container">
         <div class="row text-info">
@@ -10,4 +11,3 @@
     </div>
 
 @endsection
-

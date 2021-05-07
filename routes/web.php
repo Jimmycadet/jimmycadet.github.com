@@ -45,3 +45,12 @@ Route::get('/cadre-legal', function () {
 Route::get('/structure-organisationnelle', function () {
     return view('pages/struc-org-indicator');
 })->name('struc-org');
+
+Route::get('/confidentialite', function () {
+    return view('pages/confidentialite-indicator');
+})->name('confidentialite-indicator');
+
+
+Route::get('/recensement', function () {
+    return view('pages/recensement-indicator');
+})->name('recensement-indicator');
