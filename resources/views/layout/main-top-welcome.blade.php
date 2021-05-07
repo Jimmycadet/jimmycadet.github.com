@@ -36,7 +36,7 @@
                 </table>
             </div>
 
-            <div class="row" style="margin-top: 60px;">
+            <div class="row zoom" style="margin-top: 60px;">
                 <div class="col-md-6">
                     <div class="thumbnail">
                         <a href="">
