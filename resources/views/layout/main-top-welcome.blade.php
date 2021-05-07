@@ -36,22 +36,18 @@
                 </table>
             </div>
 
-            <div class="row zoom" style="margin-top: 60px;">
-                <div class="col-md-6">
-                    <div class="thumbnail">
+            <div class="row zoom" style="margin-top: 60px;margin-bottom: 50px; z-index: 6">
+                <div class="col-md-6" style="margin-right: auto">
                         <a href="">
                             <img class="img-responsive" src="../images/statistiqueseconomiques.png" alt="Statistiques economiques" >
 
                         </a>
-                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="thumbnail">
+                <div class="col-md-6" style="">
                         <a href="">
                             <img class="img-responsive" src="../images/statistiquesdemographiques.png" alt="Statistiques démographiques">
 
                         </a>
-                    </div>
                 </div>
 
             </div>
@@ -59,7 +55,7 @@
 
         </div>
 
-        <div class="col-md-5" style="background-color: #f7fafc;">
+        <div class="col-md-5 rotate" style="background-color: #f7fafc; z-index: 4">
             <p><h2 class="titre-section">Avis</h2></p>
             <div class="alert alert-success alert-dismissible alert-shadow alert-bg">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
